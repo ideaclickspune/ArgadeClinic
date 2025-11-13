@@ -578,3 +578,133 @@
         left: 0;   /* reset if needed */
     }
 }
+
+/* Why Choose Us CSS  */
+/* Fix icon and text alignment on mobile */
+.feature .d-flex {
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px; /* small spacing between icon and text */
+}
+
+@media (max-width: 768px) {
+  .feature .col-6 {
+    width: 100%; /* make each item full width on mobile */
+    margin-bottom: 15px;
+  }
+  .feature .d-flex {
+    justify-content: flex-start;
+  }
+  .feature .d-flex .bg-light {
+    width: 50px;
+    height: 50px;
+  }
+  .feature .ms-4 {
+    margin-left: 12px !important; /* reduce left spacing */
+  }
+  .feature h5, 
+  .feature p {
+    text-align: left;
+  }
+}
+
+/* Why Choose Us Ends  */
+
+/* Floating Buttons Code */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.floating-buttons a img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.floating-buttons a img:hover {
+  transform: scale(1.1);
+}
+
+.custom-border {
+    border: 2px solid #045879;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #ffffff; /* optional */
+}
+
+/* Floating Buttons Code ENDS  */
+
+/* Footer Map CSS  */
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* Optional: keeps it neat on large screens */
+  height: 0;
+  padding-bottom: 80%; /* Controls height ratio */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+/* Footer Map CSS ENDS  */
+
+/* Gallery CSS  */
+/* GALLERY GRID */
+.gallery-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 299px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive: 2 Images Per Row */
+@media (max-width: 768px) {
+  .gallery-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-item img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item img {
+    height: 150px;
+  }
+}
+
+/* Gallery CSS ENDS  */
