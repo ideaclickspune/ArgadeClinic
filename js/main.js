@@ -96,3 +96,30 @@
     
 })(jQuery);
 
+// Dr Meghana Argade Page JS 
+
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const faqItem = button.parentElement;
+    const answer = faqItem.querySelector('.faq-answer');
+    const icon = button.querySelector('.faq-icon');
+
+    if (faqItem.classList.contains('active')) {
+      faqItem.classList.remove('active');
+      answer.style.maxHeight = null;
+      icon.innerText = '+';
+    } else {
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+        item.querySelector('.faq-answer').style.maxHeight = null;
+        item.querySelector('.faq-icon').innerText = '+';
+      });
+
+      faqItem.classList.add('active');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+      icon.innerText = '−';
+    }
+  });
+});
+
+// Dr. Meghana Argade Page JS ENDS 

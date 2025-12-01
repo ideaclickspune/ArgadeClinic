@@ -276,6 +276,7 @@
 @media (min-width: 992px) {
     .container.feature {
         max-width: 100% !important;
+        margin-top: -30px;
     }
 
     .feature-text  {
@@ -708,3 +709,522 @@
 }
 
 /* Gallery CSS ENDS  */
+
+/* Dr. Meghana Argade Page CSS  */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fcff;
+  color: #333;
+}
+
+.hero {
+  background: linear-gradient(rgba(21,185,217,0.9), rgba(21,185,217,0.9)), url('img/meghana-hero.jpg');
+  background-size: cover;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.qualification {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 2px 5px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: px;
+  display: inline-block;
+}
+
+.btn.primary {
+  background: #fff;
+  color: #15b9d9;
+}
+
+.btn.outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* .section.light {
+  background: #ffffff;
+} */
+
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #eaf8fc;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: bold;
+} */
+
+/* MAIN LAYOUT */
+.why-layout {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* LEFT IMAGE */
+.why-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* RIGHT SIDE */
+.why-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* HORIZONTAL CARD */
+.why-horizontal-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.why-horizontal-card:hover {
+  transform: translateX(8px);
+}
+
+/* ICON CIRCLE */
+.icon-circle {
+  min-width: 60px;
+  height: 60px;
+  background: #15b9d9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.icon-circle i {
+  color: white;
+  font-size: 22px;
+}
+
+/* TEXT */
+.why-text h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.why-text p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width: 992px) {
+  .why-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-horizontal-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icon-circle {
+    margin: 0 0 10px 0;
+  }
+}
+
+
+.cta {
+  background: #15b9d9;
+  color: white;
+}
+
+@media(max-width:768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+
+/* Only for Dr Meghana header */
+.dr-meghana-page .dr-meghana-text h1 {
+    margin-bottom: 15px;
+}
+
+.dr-meghana-page .dr-meghana-text h5 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.dr-meghana-page .dr-meghana-text .row {
+    margin-bottom: 35px;
+    padding-bottom: 40px;
+}
+
+/* Custom button for Dr Meghana page */
+.dr-meghana-page .dr-meghana-btn {
+    font-family: "Roboto", sans-serif;
+    padding: 16px 40px;     /* Button Size */
+    border-radius: 10px;    /* Adjust roundness */
+    font-size: 18px;
+    font-weight: 100;
+
+}
+
+.dr-meghana-page .dr-meghana-btn:hover {
+    transform: translateY(-4px);
+}
+
+/* Clinic Association CSS  */
+/* Clinic Association Section */
+#clinic-association {
+    background: #f8f9fa;
+}
+
+.association-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.association-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.association-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.association-card h5 {
+    font-size: 16px;
+        font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+/* Clinic Association CSS ENDS  */
+
+/* FAQ CSS  */
+/* FAQ Section */
+.faq-section {
+  background: #f8f9fa;
+}
+
+.faq-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 16px 22px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question:hover {
+  background: #f1f8ff;
+}
+
+.faq-icon {
+  font-size: 22px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  background: #ffffff;
+}
+
+.faq-answer p {
+  padding: 0 22px 20px;
+  margin: 0;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* FAQ CSS ENDS  */
+
+/* Appointment CSS  */
+/* Appointment Section - Dr Meghana */
+.dr-meghana-appointment {
+    background: #f4fbff;
+    padding: 60px 0;
+}
+
+.appointment-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    border-left: 6px solid #15b9d9;
+    flex-wrap: wrap;
+}
+
+.appointment-left h2 {
+    color: #0d3c55;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.appointment-left h3 {
+    color: #15b9d9;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.clinic-time {
+    color: #555;
+    font-size: 15px;
+}
+
+.appointment-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.action-btn {
+    padding: 12px 22px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+/* Call Button */
+.call-btn {
+    background: #15b9d9;
+    color: #fff;
+}
+
+.call-btn:hover {
+    background: #0fa1bc;
+    transform: translateY(-2px);
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background: #25D366;
+    color: #fff;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe57;
+    transform: translateY(-2px);
+}
+
+/***** FORCE BUTTON COLORS ON HOVER *****/
+.call-btn:hover,
+.call-btn:hover i {
+    color: #ffffff !important;
+}
+
+.whatsapp-btn:hover,
+.whatsapp-btn:hover i {
+    color: #ffffff !important;
+}
+
+/* Also prevent underline / link styling */
+.action-btn:hover {
+    text-decoration: none !important;
+}
+
+/* Social Icons */
+.social-icons a {
+    width: 60px;
+    height: 60px;
+    background: #eaf7fc;
+    color: #15b9d9;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    font-size: 31px;
+}
+
+.social-icons a:hover {
+    background: #15b9d9;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .appointment-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+/* Appointment CSS ENDS  */
+
+/* Dr. Meghana Argade Page CSS ENDS  */
+
+
+
+/* Index.html Doctors Section  */
+.doctor-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.4s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.doctor-img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid #15b9d9;
+}
+
+.doctor-card p {
+    font-size: 15px;
+    color: #555;
+    margin: 15px 0;
+}
+
+/* Index.html Doctors Section ENDS  */
+
+/* Index.html Services Section  */
+.service-box {
+    background: #fff;
+    border-radius: 18px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.service-box img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+/* Mobile Fix */
+@media (max-width: 768px) {
+    .service-box img {
+        height: auto;            /* Let it adapt */
+        object-fit: contain;     /* Show full flyer */
+        background: #fff;        /* Fills empty space nicely */
+    }
+}
+
+.service-box h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color:#1C346E;
+}
+
+.service-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Index.html Services Section ENDS */
+
+/* Index.html FAQ's Section   */
+.accordion-button {
+    font-weight: 600;
+    background: #ffffff;
+    color: #333;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #15b9d9;
+    color: #fff;
+    box-shadow: none;
+}
+
+.accordion-item {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 1px solid #eaeaea;
+}
+
+.accordion-body {
+    background: #f9fefe;
+    line-height: 1.7;
+}
+
+/* Index.html FAQ's Section ENDS  */
