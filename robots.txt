@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ideaclickspune.github.io/ArgadeClinic/index.html/sitemap.xml
